@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zakat calculation</title>
+    <link rel="stylesheet" href="zakat.css">
+</head>
+
+<body>
+    <h1>Zakat of Gold,Silver,Cash</h1>
+    <h1>Gold</h1>
+    <input type="number" placeholder="Golg quantity" id="gold"><br>
+    <h1>Silver</h1>
+    <input type="number" placeholder="Silver quantity" id="silver"><br>
+    <h1>Cash</h1>
+    <input type="number" placeholder="Cash amount" id="cash"><br>
+    <br>
+    <br>
+    <button onclick="
+    
+    let gold=document.getElementById('gold').value;
+    let goldPrice=gold*120000;
+ 
+    let silver=document.getElementById('silver').value;
+    let silverPrice=silver*1600;
+
+    let cash=document.getElementById('cash').value;
+
+
+    let goldD=gold /40;
+    let silverD=silver /40;
+    let cashD=cash /40;
+
+    let totalZakat=goldD + silverD + cashD;
+    document.getElementById('heading').innerText=totalZakat;">
+     totalZakat
+
+
+    </button>
+<h1 id="heading">0</h1>
+
+<h2>Muhammad Nayab</h2>
+
+</body>
+
+</html>
